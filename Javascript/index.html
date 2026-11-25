@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--var,let,const (keywords)-->
+    <script>
+        console.log('Hello!!!')
+        console.log('Welcome to Javascript World!!')
+        var age=19; //<!--initialization-->
+        age=20; //<!--re-initialization-->
+        var age=21; //<!--re-declaration-->
+        console.log('Age :',age)
+        let name='Nisha';
+        name='Anisha';
+        console.log('Name :',name)
+        const nickname='Ani';
+        console.log('Nickname :',nickname)
+        let username='admin';
+        let password='admin@123';
+        if(username==='admin' && password==='admin@123'){
+            console.log('Login Successful !');
+        }else{
+            console.log('Login Failed !');
+        }
+        let smoke='true';
+        let heat='true';
+        if(smoke==='true' && heat==='true'){
+            console.log('Fire');
+        }else{
+            console.log('No Fire');
+        }
+        function student(){
+            console.log('Hello Student!');
+        }
+        student();
+        function student(name,clg){
+            console.log('Hello', name);
+            console.log(`Hello ${name} Welcome to ${clg} college`);
+        }
+        student('Nisha','SECE');
+        student('Subiksha','SECE');
+        student('Kani','SECE');
+        function employee(name,company,clg='SECE'){
+            console.log(`Hello ${name} welcome to ${company} company from ${clg} college`);
+        }
+        employee('Nisha','TCS');
+        employee('Subiksha','CTS');
+        employee('Kani','Infosys');
+    </script>
+</body>
+</html>
+<!--var=re-declare+re-initilize-->
+<!--let=re-initilize+no re-declare-->
+<!--const=no re-declare+no re-initilize-->
